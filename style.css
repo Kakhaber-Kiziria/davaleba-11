@@ -17,29 +17,78 @@ textarea {
     margin-left: 144px;
     margin-bottom: 51px;
 }
+#div-input {
+    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -401px;
+    left: 950px;
+}
+form {
+    height: 0;
+}
 input {
     background-color: #F8F8F8;
     border: 2px solid rgba(213, 211, 211, 0.3);
     padding: 20px;
     width: 370px;
-    margin-bottom: 20px;
+    margin-bottom: 31px;
     margin-left: 20px;
 }
-#div-input {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-}
+
 button {
     width: 413px;
     height: 61px;
     background-color: #5968F4;
     color: white;
+    margin-top: 5px;
     margin-left: 20px;
 }
 button:hover {
     border: 2px solid rgba(213, 211, 211, 0.3);
     background-color: #3a429b;
+}
+#Contact {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.round {
+    width: 68px;
+    height: 68px;
+    border-radius: 100%;
+    background-color: #5968F4;
+    margin-top: 51px;
+}
+.round > .fa-envelope {
+    font-size: 30px;
+    margin: 19px;
+    color: #3a429b;
+}
+.round > .fa-phone {
+    font-size: 35px;
+    margin: 20px;
+    color: #3a429b;
+}
+.round > .fa-home {
+    font-size: 40px;
+    margin: 15px;
+    color: #3a429b;
+}
+.satauri {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4E4D54;
+    margin-top: 16px;
+}
+.address {
+    font-size: 15px;
+    font-weight: 700;
+    color: #99999A;
+    margin-top: 8px;
 }
 footer {
     width: 100%;
@@ -68,7 +117,7 @@ footer {
 #images-div {
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     margin-bottom: 39px;
 }
 .img {
@@ -76,6 +125,7 @@ footer {
     height: 373px;
     margin-top: 40px;
     margin-right: 20px;
+    object-fit: cover;
 }
 #foot-div-1 {
     width: 295px;
@@ -162,4 +212,8 @@ span {
 .fa-home {
     color: #5863E3;
     margin-right: 12px;
+}
+ a {
+    text-decoration: none;
+    color: #5863E3;
 }
