@@ -6,6 +6,10 @@
 	font: inherit;
 	vertical-align: baseline;
 }
+#first-div {
+    display: flex;
+    justify-content: flex-start;
+}
 textarea {
     background-color: #F8F8F8;
     width: 756px;
@@ -18,15 +22,11 @@ textarea {
     margin-bottom: 51px;
 }
 #div-input {
-    max-width: 370px;
+    width: 370px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: -401px;
-    left: 950px;
-}
-form {
-    height: 0;
+    margin-top: 59px;
+    margin-left: 20px;
 }
 input {
     background-color: #F8F8F8;
@@ -34,22 +34,19 @@ input {
     padding: 20px;
     width: 370px;
     margin-bottom: 31px;
-    margin-left: 20px;
 }
-
 button {
     width: 413px;
     height: 61px;
     background-color: #5968F4;
     color: white;
     margin-top: 5px;
-    margin-left: 20px;
 }
 button:hover {
     border: 2px solid rgba(213, 211, 211, 0.3);
     background-color: #3a429b;
 }
-#Contact {
+#contact {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -127,7 +124,7 @@ footer {
     margin-right: 20px;
     object-fit: cover;
 }
-#foot-div-1 {
+#footer-div-1 {
     width: 295px;
     height: 0;
     margin-left: 143px;
@@ -166,7 +163,7 @@ footer {
     margin-top: 23px;
     margin-right: 7px;
 }
-#foot-div-2 {
+#footer-div-2 {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -216,4 +213,110 @@ span {
  a {
     text-decoration: none;
     color: #5863E3;
+}
+@media only screen and (max-width: 664px) {
+    .h1 {
+        margin-top: 40px !important;
+        margin-left: 57px !important;
+        font-size: 30px !important;
+    }
+    .h2 {
+        width: 371px !important;
+        height: 112px !important;
+        margin: 47px !important;
+    }
+    #div-input {
+        margin-left: 35px !important;
+        width: 611px !important;
+    }
+    textarea {
+        margin: 34px !important;
+        width: 365px !important;
+        height: 300px !important;
+    }
+    input {
+        width: 370px !important;
+    }
+    button {
+        width: 412px !important;
+    }
+    #first-div {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        margin: 0 auto !important;
+        width: 647px !important;
+    }
+    #contact {
+        flex-direction: column !important;
+    }
+    .for-center {
+        margin: 0 auto !important;
+        width: 176px !important;
+    }
+    #images-div {
+        margin-top: 140px !important;
+    }
+    footer {
+        height: 1000px !important;
+    }
+    #footer-div-1 {
+        height: 0 !important;
+    }
+    #footer-div-2 {
+        flex-direction: column !important;
+        position: relative !important;
+        top: 260px !important;
+        left: 144px !important;
+    }
+    .title {
+        margin-top: 40px !important;
+        margin-bottom: 10px !important;
+    }
+}
+@media only screen and (max-width: 1383px) {
+    .h1 {
+        margin: 60px auto 20px;
+        font-size: 30px;
+    }
+    .h2 {
+        width: 371px;
+        height: 112px;
+        margin: 10px auto;
+    }
+    input {
+        width: 507px;
+    }
+    button {
+        width: 549px;
+    }
+    textarea {
+        margin: 34px 19px;
+        width: 500px;
+        height: 400px;
+    }
+    #first-div {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        width: 647px;
+    }
+    .for-center {
+        margin: 0 auto;
+        width: 176px;
+    }
+    #images-div {
+        margin-top: 140px;
+    }
+    #footer-div-1 {
+        height: 225px;
+        margin: 0 auto;
+    }
+    #footer-div-2 {
+        position: static;
+        margin: 43px auto;
+        justify-content: space-between;
+    }
+    footer {
+        height: 600px;
+    }
 }
